@@ -1,0 +1,12 @@
+package io.github.dpplinh28.lucide.metadata
+
+import io.github.dpplinh28.lucide.all.*
+import io.github.dpplinh28.lucide.LucideIconMetadata
+import io.github.dpplinh28.lucide.LucideIcons
+import io.github.dpplinh28.lucide.LucideIconDefinition
+
+internal val lucideMetadata{{index}} = listOf(
+    {{#each icons}}
+    LucideIconMetadata("{{name}}", listOf({{{tags}}}), listOf({{{categories}}}), LucideIcons.All.{{name}}Definition){{#unless @last}},{{/unless}}
+    {{/each}}
+)

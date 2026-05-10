@@ -1,0 +1,45 @@
+package io.github.dpplinh28.lucide.all
+
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.vector.ImageVector
+import io.github.dpplinh28.lucide.LucideIcons
+import io.github.dpplinh28.lucide.LucideIconDefinition
+import io.github.dpplinh28.lucide.asImageVector
+import io.github.dpplinh28.lucide.lucidePath
+
+private val _ActivityDefinition = LucideIconDefinition("FlipVertical2") { strokeWidth ->
+    lucidePath(strokeWidth) {
+                moveToRelative(17f, 3f)
+                lineToRelative(-5f, 5f)
+                lineToRelative(-5f, -5f)
+                horizontalLineToRelative(10f)
+            }
+            lucidePath(strokeWidth) {
+                moveToRelative(17f, 21f)
+                lineToRelative(-5f, -5f)
+                lineToRelative(-5f, 5f)
+                horizontalLineToRelative(10f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(4f, 12f)
+                horizontalLineTo(2f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(10f, 12f)
+                horizontalLineTo(8f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(16f, 12f)
+                horizontalLineToRelative(-2f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(22f, 12f)
+                horizontalLineToRelative(-2f)
+            }
+}
+
+public val LucideIcons.All.FlipVertical2Definition: LucideIconDefinition
+    get() = _ActivityDefinition
+
+public val LucideIcons.All.FlipVertical2: ImageVector
+    @Composable get() = FlipVertical2Definition.asImageVector()

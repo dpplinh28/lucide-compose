@@ -1,0 +1,25 @@
+package io.github.dpplinh28.lucide
+
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.vector.ImageVector
+import io.github.dpplinh28.lucide.metadata.*
+
+data class LucideIconMetadata(
+    val name: String,
+    val tags: List<String>,
+    val categories: List<String>,
+    val definition: LucideIconDefinition
+) {
+    val vector: ImageVector @Composable get() = definition.asImageVector()
+}
+
+object LucideMetadata {
+    const val VERSION = "1.14.0"
+
+    val allIcons: List<LucideIconMetadata> by lazy {
+        {{#each chunkIndexes}}
+        lucideMetadata{{this}} +
+        {{/each}}
+        emptyList()
+    }
+}

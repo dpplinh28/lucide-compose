@@ -1,0 +1,11 @@
+.gradle
+/build/
+!/src/**/build/
+.idea
+*.iml
+local.properties
+.DS_Store
+.apple
+.history
+.kotlin
+.artifacts

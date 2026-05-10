@@ -1,0 +1,13 @@
+package io.github.dpplinh28.lucide.categories
+
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.vector.ImageVector
+import io.github.dpplinh28.lucide.LucideIcons
+import io.github.dpplinh28.lucide.all.*
+
+object LucideIcons{{className}} {
+    {{#each icons}}
+    val {{this}}Definition get() = LucideIcons.All.{{this}}Definition
+    val {{this}}: ImageVector @Composable get() = LucideIcons.All.{{this}}
+    {{/each}}
+}
