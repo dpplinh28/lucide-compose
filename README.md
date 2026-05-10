@@ -1,5 +1,7 @@
 # Lucide Compose
 
+[![Publish to Maven Central](https://github.com/dpplinh28/lucide-compose/actions/workflows/publish.yml/badge.svg)](https://github.com/dpplinh28/lucide-compose/actions/workflows/publish.yml)
+
 A Kotlin Multiplatform library providing [Lucide Icons](https://lucide.dev/) (v1.14.0) as `ImageVector`s for Jetpack Compose and Compose Multiplatform.
 
 ## Features
