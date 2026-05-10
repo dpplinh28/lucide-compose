@@ -1,43 +1,43 @@
+import com.android.build.api.dsl.androidLibrary
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.gradle.api.publish.maven.MavenPublication
-import org.gradle.api.publish.PublishingExtension
-import org.gradle.plugins.signing.SigningExtension
 
 group = "io.github.dpplinh28"
 val lucideVersion = "1.14.0"
-val libraryPostfix = "1" 
+val libraryPostfix = "1"
 version = "$lucideVersion-$libraryPostfix"
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.vanniktech.mavenPublish)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
-    id("maven-publish")
-    id("signing")
 }
 
 kotlin {
-    withSourcesJar()
-    androidTarget {
-        publishLibraryVariants("release")
-        compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_17)
-        }
-    }
-
-    listOf(
-        iosArm64(),
-        iosSimulatorArm64(),
-    ).forEach { iosTarget ->
-        iosTarget.binaries.framework {
-            baseName = "LucideCompose"
-            isStatic = true
-            version = project.version.toString()
-        }
-    }
-
     jvm()
+    androidLibrary {
+        namespace = "io.github.dpplinh28.lucide.compose"
+        compileSdk = libs.versions.android.compileSdk.get().toInt()
+        minSdk = libs.versions.android.minSdk.get().toInt()
+
+        withJava() // enable java compilation support
+        withHostTestBuilder {}.configure {}
+        withDeviceTestBuilder {
+            sourceSetTreeName = "test"
+        }
+
+        compilations.configureEach {
+            compilerOptions.configure {
+                jvmTarget.set(
+                    JvmTarget.JVM_11
+                )
+            }
+        }
+    }
+    iosX64()
+    iosArm64()
+    iosSimulatorArm64()
 
     sourceSets {
         commonMain.dependencies {
@@ -61,73 +61,38 @@ kotlin {
     }
 }
 
-android {
-    namespace = "io.github.dpplinh28.lucide"
-    compileSdk =
-        libs.versions.android.compileSdk
-            .get()
-            .toInt()
-    defaultConfig {
-        minSdk =
-            libs.versions.android.minSdk
-                .get()
-                .toInt()
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-}
+mavenPublishing {
+    publishToMavenCentral()
 
-val javadocJar by tasks.registering(Jar::class) {
-    archiveClassifier.set("javadoc")
-}
+    signAllPublications()
 
-publishing {
-    publications.withType<MavenPublication> {
-        artifact(javadocJar)
-        pom {
-            name.set("Lucide Compose")
-            description.set("Lucide Icons for Compose (Android/Multiplatform)")
-            url.set("https://github.com/dpplinh28/lucide-compose")
-            licenses {
-                license {
-                    name.set("ISC License")
-                    url.set("https://github.com/lucide-icons/lucide/blob/main/LICENSE")
-                }
-            }
-            developers {
-                developer {
-                    id.set("dpplinh28")
-                    name.set("Linh Do")
-                    email.set("dpplinh28@gmail.com")
-                }
-            }
-            scm {
-                connection.set("scm:git:git://github.com/dpplinh28/lucide-compose.git")
-                developerConnection.set("scm:git:ssh://github.com/dpplinh28/lucide-compose.git")
-                url.set("https://github.com/dpplinh28/lucide-compose")
+    coordinates(group.toString(), "lucide-compose", version.toString())
+
+    pom {
+        name = "Lucide Compose"
+        description = "Lucide Icons for Compose (Android/Multiplatform)"
+        inceptionYear = "2026"
+        url = "https://github.com/dpplinh28/lucide-compose"
+        licenses {
+            license {
+                name = "The Apache License, Version 2.0"
+                url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+                distribution = "https://www.apache.org/licenses/LICENSE-2.0.txt"
             }
         }
-    }
-    repositories {
-        maven {
-            val releasesRepoUrl = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
-            val snapshotsRepoUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
-            url = if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
-            credentials {
-                username = project.findProperty("ossrhUsername")?.toString() ?: System.getenv("OSSRH_USERNAME")
-                password = project.findProperty("ossrhPassword")?.toString() ?: System.getenv("OSSRH_PASSWORD")
+        developers {
+            developer {
+                id = "dpplinh28"
+                name = "Linh Do"
+                email = "dpplinh28@gmail.com"
+                url = "https://github.com/dpplinh28"
             }
+        }
+        scm {
+            url = "https://github.com/dpplinh28/lucide-compose"
+            connection = "scm:git:git://github.com/dpplinh28/lucide-compose.git"
+            developerConnection = "scm:git:ssh://github.com/dpplinh28/lucide-compose.git"
         }
     }
 }
 
-signing {
-    val signingKey = (project.findProperty("signingKey")?.toString() ?: System.getenv("SIGNING_KEY"))?.replace("\\n", "\n")
-    val signingPassword = project.findProperty("signingPassword")?.toString() ?: System.getenv("SIGNING_PASSWORD")
-    if (signingKey != null && signingPassword != null) {
-        useInMemoryPgpKeys(signingKey, signingPassword)
-        sign(publishing.publications)
-    }
-}
