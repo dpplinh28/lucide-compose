@@ -1,10 +1,8 @@
 package io.github.dpplinh28.lucide
-
 import io.github.dpplinh28.lucide.categories.*
 
 object LucideIcons {
     object All
-
     
     val Accessibility = LucideIconsAccessibility
     

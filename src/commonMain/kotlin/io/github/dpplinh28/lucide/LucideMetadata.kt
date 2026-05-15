@@ -2,7 +2,9 @@ package io.github.dpplinh28.lucide
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
+
 import io.github.dpplinh28.lucide.metadata.*
+
 
 data class LucideIconMetadata(
     val name: String,
@@ -14,7 +16,7 @@ data class LucideIconMetadata(
 }
 
 object LucideMetadata {
-    const val VERSION = "1.14.0"
+    const val VERSION = "1.16.0"
 
     val allIcons: List<LucideIconMetadata> by lazy {
         

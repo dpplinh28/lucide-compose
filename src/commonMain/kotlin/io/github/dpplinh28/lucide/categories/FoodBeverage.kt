@@ -37,8 +37,14 @@ object LucideIconsFoodBeverage {
     val BeerOffDefinition get() = LucideIcons.All.BeerOffDefinition
     val BeerOff: ImageVector @Composable get() = LucideIcons.All.BeerOff
     
+    val BlenderDefinition get() = LucideIcons.All.BlenderDefinition
+    val Blender: ImageVector @Composable get() = LucideIcons.All.Blender
+    
     val BottleWineDefinition get() = LucideIcons.All.BottleWineDefinition
     val BottleWine: ImageVector @Composable get() = LucideIcons.All.BottleWine
+    
+    val BroccoliDefinition get() = LucideIcons.All.BroccoliDefinition
+    val Broccoli: ImageVector @Composable get() = LucideIcons.All.Broccoli
     
     val CakeDefinition get() = LucideIcons.All.CakeDefinition
     val Cake: ImageVector @Composable get() = LucideIcons.All.Cake

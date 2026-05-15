@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata5 = listOf(
     
+    LucideIconMetadata("Croissant", listOf("bakery", "cooking", "food", "pastry"), listOf("food-beverage"), LucideIcons.All.CroissantDefinition),
+    
+    LucideIconMetadata("Crop", listOf("photo", "image"), listOf("photography", "design"), LucideIcons.All.CropDefinition),
+    
     LucideIconMetadata("Cross", listOf("healthcare", "first aid"), listOf("shapes"), LucideIcons.All.CrossDefinition),
     
     LucideIconMetadata("Crosshair", listOf("aim", "target"), listOf("photography"), LucideIcons.All.CrosshairDefinition),
@@ -201,10 +205,6 @@ internal val lucideMetadata5 = listOf(
     
     LucideIconMetadata("FileClock", listOf("history", "log", "clock"), listOf("files", "time"), LucideIcons.All.FileClockDefinition),
     
-    LucideIconMetadata("FileCodeCorner", listOf("script", "document", "html", "xml", "property list", "plist"), listOf("files", "development"), LucideIcons.All.FileCodeCornerDefinition),
-    
-    LucideIconMetadata("FileCode", listOf("script", "document", "gist", "html", "xml", "property list", "plist"), listOf("files", "development"), LucideIcons.All.FileCodeDefinition),
-    
-    LucideIconMetadata("FileCog", listOf("executable", "settings", "cog", "edit", "gear"), listOf("files"), LucideIcons.All.FileCogDefinition)
+    LucideIconMetadata("FileCodeCorner", listOf("script", "document", "html", "xml", "property list", "plist"), listOf("files", "development"), LucideIcons.All.FileCodeCornerDefinition)
     
 )

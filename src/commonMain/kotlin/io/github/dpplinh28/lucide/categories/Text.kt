@@ -652,6 +652,24 @@ object LucideIconsText {
     val StickyNoteDefinition get() = LucideIcons.All.StickyNoteDefinition
     val StickyNote: ImageVector @Composable get() = LucideIcons.All.StickyNote
     
+    val StickyNoteCheckDefinition get() = LucideIcons.All.StickyNoteCheckDefinition
+    val StickyNoteCheck: ImageVector @Composable get() = LucideIcons.All.StickyNoteCheck
+    
+    val StickyNoteMinusDefinition get() = LucideIcons.All.StickyNoteMinusDefinition
+    val StickyNoteMinus: ImageVector @Composable get() = LucideIcons.All.StickyNoteMinus
+    
+    val StickyNoteOffDefinition get() = LucideIcons.All.StickyNoteOffDefinition
+    val StickyNoteOff: ImageVector @Composable get() = LucideIcons.All.StickyNoteOff
+    
+    val StickyNotePlusDefinition get() = LucideIcons.All.StickyNotePlusDefinition
+    val StickyNotePlus: ImageVector @Composable get() = LucideIcons.All.StickyNotePlus
+    
+    val StickyNoteXDefinition get() = LucideIcons.All.StickyNoteXDefinition
+    val StickyNoteX: ImageVector @Composable get() = LucideIcons.All.StickyNoteX
+    
+    val StickyNotesDefinition get() = LucideIcons.All.StickyNotesDefinition
+    val StickyNotes: ImageVector @Composable get() = LucideIcons.All.StickyNotes
+    
     val StrikethroughDefinition get() = LucideIcons.All.StrikethroughDefinition
     val Strikethrough: ImageVector @Composable get() = LucideIcons.All.Strikethrough
     

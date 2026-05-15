@@ -1,4 +1,5 @@
 rootProject.name = "lucide-compose"
+include(":generator")
 
 pluginManagement {
     repositories {

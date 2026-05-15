@@ -2,7 +2,9 @@ package io.github.dpplinh28.lucide
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
+{{#if chunkIndexes}}
 import io.github.dpplinh28.lucide.metadata.*
+{{/if}}
 
 data class LucideIconMetadata(
     val name: String,
@@ -14,7 +16,7 @@ data class LucideIconMetadata(
 }
 
 object LucideMetadata {
-    const val VERSION = "1.14.0"
+    const val VERSION = "{{version}}"
 
     val allIcons: List<LucideIconMetadata> by lazy {
         {{#each chunkIndexes}}

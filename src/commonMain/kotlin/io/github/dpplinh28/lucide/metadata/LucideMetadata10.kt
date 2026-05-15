@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata10 = listOf(
     
+    LucideIconMetadata("MicOff", listOf("record", "sound", "mute", "microphone"), listOf("devices", "communication", "connectivity", "multimedia"), LucideIcons.All.MicOffDefinition),
+    
+    LucideIconMetadata("MicVocal", listOf("lyrics", "voice", "listen", "sound", "music", "radio", "podcast", "karaoke", "singing", "microphone"), listOf("devices", "multimedia"), LucideIcons.All.MicVocalDefinition),
+    
     LucideIconMetadata("Mic", listOf("record", "sound", "listen", "radio", "podcast", "microphone"), listOf("devices", "communication", "connectivity", "multimedia"), LucideIcons.All.MicDefinition),
     
     LucideIconMetadata("Microchip", listOf("processor", "cores", "technology", "computer", "chip", "integrated circuit", "memory", "ram", "specs", "gpu", "gigahertz", "ghz"), listOf("devices"), LucideIcons.All.MicrochipDefinition),
@@ -201,10 +205,6 @@ internal val lucideMetadata10 = listOf(
     
     LucideIconMetadata("Panda", listOf("animal", "wildlife", "bear", "zoo", "bamboo"), listOf("animals"), LucideIcons.All.PandaDefinition),
     
-    LucideIconMetadata("PanelBottomClose", listOf("drawer", "dock", "hide", "chevron", "down"), listOf("layout", "arrows"), LucideIcons.All.PanelBottomCloseDefinition),
-    
-    LucideIconMetadata("PanelBottomDashed", listOf("drawer", "dock", "show", "reveal", "padding", "margin", "guide", "layout", "bleed"), listOf("layout"), LucideIcons.All.PanelBottomDashedDefinition),
-    
-    LucideIconMetadata("PanelBottomOpen", listOf("drawer", "dock", "show", "reveal", "chevron", "up"), listOf("layout", "arrows"), LucideIcons.All.PanelBottomOpenDefinition)
+    LucideIconMetadata("PanelBottomClose", listOf("drawer", "dock", "hide", "chevron", "down"), listOf("layout", "arrows"), LucideIcons.All.PanelBottomCloseDefinition)
     
 )

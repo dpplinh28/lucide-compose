@@ -7,6 +7,8 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata2 = listOf(
     
+    LucideIconMetadata("BookMinus", listOf("code", "coding", "version control", "git", "repository", "remove", "delete", "censor", "cancel", "forbid", "prohibit", "ban", "uneducated", "re-educate", "unlearn", "downgrade"), listOf("development", "text", "gaming"), LucideIcons.All.BookMinusDefinition),
+    
     LucideIconMetadata("BookOpenCheck", listOf("read", "pages", "booklet", "magazine", "leaflet", "pamphlet", "library", "written", "authored", "published", "informed", "knowledgeable", "educated", "schooled", "homework", "examined", "tested", "marked", "passed", "graduated", "studied", "learned", "lesson", "researched", "documented", "revealed", "blank", "plain language", "true", "truth", "verified", "corrected", "task", "todo", "done", "completed", "finished", "ticked"), listOf("text", "development", "gaming"), LucideIcons.All.BookOpenCheckDefinition),
     
     LucideIconMetadata("BookOpenText", listOf("reading", "pages", "booklet", "magazine", "leaflet", "pamphlet", "library", "writing", "written", "writer", "author", "story", "script", "fiction", "novel", "information", "knowledge", "education", "high school", "university", "college", "academy", "student", "study", "learning", "homework", "research", "documentation", "revealed"), listOf("text", "development"), LucideIcons.All.BookOpenTextDefinition),
@@ -84,6 +86,8 @@ internal val lucideMetadata2 = listOf(
     LucideIconMetadata("Briefcase", listOf("work", "bag", "baggage", "folder"), listOf("transportation"), LucideIcons.All.BriefcaseDefinition),
     
     LucideIconMetadata("BringToFront", listOf("bring", "send", "move", "over", "forward", "front", "overlap", "layer", "order"), listOf("design", "layout"), LucideIcons.All.BringToFrontDefinition),
+    
+    LucideIconMetadata("Broccoli", listOf("leafy", "crisp", "fresh", "culinary", "vegetation", "vegetable", "food", "healthy", "vegan", "vegetarian", "nutrition", "diet", "plant", "green", "produce"), listOf("food-beverage"), LucideIcons.All.BroccoliDefinition),
     
     LucideIconMetadata("BrushCleaning", listOf("cleaning", "utensil", "housekeeping", "tool", "sweeping", "scrubbing", "hygiene", "maintenance", "household", "cleaner", "chores", "equipment", "sanitation", "bristles", "handle", "home care", "sanitize", "purify", "wash", "disinfect", "sterilize", "scrub", "polish", "decontaminate", "wipe", "spotless", "remove", "empty", "erase", "purge", "eliminate"), listOf("home", "tools", "design"), LucideIcons.All.BrushCleaningDefinition),
     
@@ -201,10 +205,6 @@ internal val lucideMetadata2 = listOf(
     
     LucideIconMetadata("Castle", listOf("fortress", "stronghold", "palace", "chateau", "building"), listOf("buildings", "gaming", "navigation"), LucideIcons.All.CastleDefinition),
     
-    LucideIconMetadata("Cat", listOf("animal", "pet", "kitten", "feline"), listOf("animals"), LucideIcons.All.CatDefinition),
-    
-    LucideIconMetadata("CctvOff", listOf("camera", "surveillance", "recording", "film", "videotape", "crime", "watching"), listOf("security", "devices", "communication", "connectivity", "photography"), LucideIcons.All.CctvOffDefinition),
-    
-    LucideIconMetadata("Cctv", listOf("camera", "surveillance", "recording", "film", "videotape", "crime", "watching"), listOf("security", "devices", "communication", "connectivity", "photography"), LucideIcons.All.CctvDefinition)
+    LucideIconMetadata("Cat", listOf("animal", "pet", "kitten", "feline"), listOf("animals"), LucideIcons.All.CatDefinition)
     
 )

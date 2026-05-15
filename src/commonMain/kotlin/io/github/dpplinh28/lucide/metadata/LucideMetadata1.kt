@@ -159,6 +159,8 @@ internal val lucideMetadata1 = listOf(
     
     LucideIconMetadata("Blend", listOf("mode", "overlay", "multiply", "screen", "opacity", "transparency", "alpha", "filters", "lenses", "mixed", "shades", "tints", "hues", "saturation", "brightness", "overlap", "colors", "colours"), listOf("design", "photography", "tools", "development"), LucideIcons.All.BlendDefinition),
     
+    LucideIconMetadata("Blender", listOf("mixer", "appliances", "food", "liquid", "juicer", "vitamizer", "mix", "emulsify", "smoothie", "drink", "blade", "container", "kitchen", "milkshake", "cocktail", "beverage", "culinary", "shredder", "processor", "cooking", "recipe", "chef", "restaurant"), listOf("food-beverage", "home"), LucideIcons.All.BlenderDefinition),
+    
     LucideIconMetadata("Blinds", listOf("shades", "screen", "curtain", "shutter", "roller blind", "window", "lighting", "household", "home"), listOf("home"), LucideIcons.All.BlindsDefinition),
     
     LucideIconMetadata("Blocks", listOf("addon", "plugin", "integration", "extension", "package", "build", "stack", "toys", "kids", "children", "learning", "squares", "corner"), listOf("development", "layout", "shapes"), LucideIcons.All.BlocksDefinition),
@@ -203,8 +205,6 @@ internal val lucideMetadata1 = listOf(
     
     LucideIconMetadata("BookLock", listOf("code", "coding", "version control", "git", "repository", "private", "secret", "hidden", "knowledge"), listOf("development", "security", "gaming"), LucideIcons.All.BookLockDefinition),
     
-    LucideIconMetadata("BookMarked", listOf("dictionary", "reading", "booklet", "magazine", "leaflet", "pamphlet", "tome", "library", "writing", "written", "writer", "author", "story", "script", "fiction", "novel", "information", "knowledge", "education", "high school", "university", "college", "academy", "student", "study", "learning", "homework", "research", "documentation", "saved", "later", "future", "reference", "index", "code", "coding", "version control", "git", "repository"), listOf("text", "development", "gaming"), LucideIcons.All.BookMarkedDefinition),
-    
-    LucideIconMetadata("BookMinus", listOf("code", "coding", "version control", "git", "repository", "remove", "delete", "censor", "cancel", "forbid", "prohibit", "ban", "uneducated", "re-educate", "unlearn", "downgrade"), listOf("development", "text", "gaming"), LucideIcons.All.BookMinusDefinition)
+    LucideIconMetadata("BookMarked", listOf("dictionary", "reading", "booklet", "magazine", "leaflet", "pamphlet", "tome", "library", "writing", "written", "writer", "author", "story", "script", "fiction", "novel", "information", "knowledge", "education", "high school", "university", "college", "academy", "student", "study", "learning", "homework", "research", "documentation", "saved", "later", "future", "reference", "index", "code", "coding", "version control", "git", "repository"), listOf("text", "development", "gaming"), LucideIcons.All.BookMarkedDefinition)
     
 )
