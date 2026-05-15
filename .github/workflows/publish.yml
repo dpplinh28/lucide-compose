@@ -1,13 +1,14 @@
 name: Publish to Maven Central
 on:
-  push:
-    tags:
-      - 'v*'
+  pull_request:
     branches:
       - main
+    types: [closed]
 
 jobs:
   publish:
+    # Only run if the PR was merged
+    if: github.event.pull_request.merged == true
     name: Release build and publish
     runs-on: macos-latest
     permissions:
@@ -33,11 +34,11 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: v${{ steps.lucide_version.outputs.version }}
+          target_commitish: main
           body: |
             This release includes icons from **Lucide v${{ steps.lucide_version.outputs.version }}**.
           generate_release_notes: true
-          # The tag name will be used as the release name automatically
-          # You can customize it with 'name: Release ${{ github.ref_name }}'
 
       - name: Publish to Maven Central
         run: ./gradlew publishToMavenCentral --no-configuration-cache
