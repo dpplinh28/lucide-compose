@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata14 = listOf(
     
+    LucideIconMetadata("SquareChartGantt", listOf("projects", "manage", "overview", "roadmap", "plan", "intentions", "timeline", "deadline", "date", "event", "range", "period", "productivity", "work", "agile", "code", "coding", "toolbar", "button"), listOf("charts", "time", "development", "design"), LucideIcons.All.SquareChartGanttDefinition),
+    
+    LucideIconMetadata("SquareCheckBig", listOf("done", "todo", "tick", "complete", "task"), listOf("notifications"), LucideIcons.All.SquareCheckBigDefinition),
+    
     LucideIconMetadata("SquareCheck", listOf("done", "todo", "tick", "complete", "task"), listOf("notifications"), LucideIcons.All.SquareCheckDefinition),
     
     LucideIconMetadata("SquareChevronDown", listOf("back", "menu", "panel"), listOf("arrows", "navigation"), LucideIcons.All.SquareChevronDownDefinition),
@@ -135,7 +139,19 @@ internal val lucideMetadata14 = listOf(
     
     LucideIconMetadata("Sticker", listOf("reaction", "emotion", "smile", "happy", "feedback"), listOf("social"), LucideIcons.All.StickerDefinition),
     
+    LucideIconMetadata("StickyNoteCheck", listOf("post-it", "comment", "annotation", "reaction", "memo", "reminder", "todo", "task", "idea", "brainstorm", "document", "page", "paper", "sheet", "stationary", "office", "done", "complete", "success", "check", "verified"), listOf("text", "social"), LucideIcons.All.StickyNoteCheckDefinition),
+    
+    LucideIconMetadata("StickyNoteMinus", listOf("post-it", "comment", "annotation", "reaction", "memo", "reminder", "todo", "task", "idea", "brainstorm", "document", "page", "paper", "sheet", "stationary", "office", "remove", "delete", "minus"), listOf("text", "social"), LucideIcons.All.StickyNoteMinusDefinition),
+    
+    LucideIconMetadata("StickyNoteOff", listOf("post-it", "comment", "annotation", "reaction", "memo", "reminder", "todo", "task", "idea", "brainstorm", "document", "page", "paper", "sheet", "stationary", "office", "disabled", "hidden", "mute", "inactive"), listOf("text", "social"), LucideIcons.All.StickyNoteOffDefinition),
+    
+    LucideIconMetadata("StickyNotePlus", listOf("post-it", "comment", "annotation", "reaction", "memo", "reminder", "todo", "task", "idea", "brainstorm", "document", "page", "paper", "sheet", "stationary", "office", "add", "create", "new", "plus"), listOf("text", "social"), LucideIcons.All.StickyNotePlusDefinition),
+    
+    LucideIconMetadata("StickyNoteX", listOf("post-it", "comment", "annotation", "reaction", "memo", "reminder", "todo", "task", "idea", "brainstorm", "document", "page", "paper", "sheet", "stationary", "office", "close", "cancel", "delete", "remove"), listOf("text", "social"), LucideIcons.All.StickyNoteXDefinition),
+    
     LucideIconMetadata("StickyNote", listOf("post-it", "comment", "annotation", "reaction", "memo", "reminder", "todo", "task", "idea", "brainstorm", "document", "page", "paper", "sheet", "stationary", "office"), listOf("text", "social"), LucideIcons.All.StickyNoteDefinition),
+    
+    LucideIconMetadata("StickyNotes", listOf("post-it", "annotation", "memo", "reminder", "todo", "tasks", "ideas", "brainstorm", "documents", "notes", "multiple", "collection", "group", "stack", "clone", "duplicate", "copy"), listOf("text", "social"), LucideIcons.All.StickyNotesDefinition),
     
     LucideIconMetadata("Stone", listOf("mineral", "geology", "nature", "solid", "pebble", "crystal", "ore", "hard", "coal", "stone", "rock", "boulder"), listOf("nature"), LucideIcons.All.StoneDefinition),
     
@@ -189,22 +205,6 @@ internal val lucideMetadata14 = listOf(
     
     LucideIconMetadata("TableProperties", listOf("property list", "plist", "spreadsheet", "grid", "dictionary", "object", "hash"), listOf("text", "development", "files"), LucideIcons.All.TablePropertiesDefinition),
     
-    LucideIconMetadata("TableRowsSplit", listOf("spreadsheet", "grid", "cut", "break", "divide", "separate", "segment"), listOf("text", "files"), LucideIcons.All.TableRowsSplitDefinition),
-    
-    LucideIconMetadata("Table", listOf("spreadsheet", "grid"), listOf("text", "files"), LucideIcons.All.TableDefinition),
-    
-    LucideIconMetadata("TabletSmartphone", listOf("responsive", "screens", "browser", "testing", "mobile"), listOf("devices", "design", "development", "tools"), LucideIcons.All.TabletSmartphoneDefinition),
-    
-    LucideIconMetadata("Tablet", listOf("device"), listOf("devices"), LucideIcons.All.TabletDefinition),
-    
-    LucideIconMetadata("Tablets", listOf("medicine", "medication", "drug", "prescription", "pills", "pharmacy"), listOf("medical"), LucideIcons.All.TabletsDefinition),
-    
-    LucideIconMetadata("Tag", listOf("label", "badge", "ticket", "mark"), listOf("account"), LucideIcons.All.TagDefinition),
-    
-    LucideIconMetadata("Tags", listOf("labels", "badges", "tickets", "marks", "copy", "multiple"), listOf("account"), LucideIcons.All.TagsDefinition),
-    
-    LucideIconMetadata("Tally1", listOf("count", "score", "enumerate", "days", "one", "1", "first", "bar", "prison", "cell", "sentence"), listOf("math", "gaming"), LucideIcons.All.Tally1Definition),
-    
-    LucideIconMetadata("Tally2", listOf("count", "score", "enumerate", "days", "two", "2", "second", "double", "bars", "prison", "cell", "sentence"), listOf("math", "gaming"), LucideIcons.All.Tally2Definition)
+    LucideIconMetadata("TableRowsSplit", listOf("spreadsheet", "grid", "cut", "break", "divide", "separate", "segment"), listOf("text", "files"), LucideIcons.All.TableRowsSplitDefinition)
     
 )

@@ -1,10 +1,8 @@
 package io.github.dpplinh28.lucide
-
-import io.github.dpplinh28.lucide.categories.*
+{{#if categories}}import io.github.dpplinh28.lucide.categories.*{{/if}}
 
 object LucideIcons {
     object All
-
     {{#each categories}}
     val {{name}} = LucideIcons{{className}}
     {{/each}}

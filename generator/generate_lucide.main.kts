@@ -26,7 +26,8 @@ data class IconMetadata(
 class LucideGenerator(
     private val sourceDir: File,
     private val outputDir: File,
-    private val templateDir: File
+    private val templateDir: File,
+    private val version: String
 ) {
     private val handlebars = Handlebars(FileTemplateLoader(templateDir, ".hbs"))
 
@@ -271,7 +272,8 @@ class LucideGenerator(
 
         val mainTemplate = handlebars.compile("metadata")
         val content = mainTemplate.apply(mapOf(
-            "chunkIndexes" to chunks.indices.toList()
+            "chunkIndexes" to chunks.indices.toList(),
+            "version" to version
         ))
         File(outputDir, "LucideMetadata.kt").writeText(content.trim() + "\n")
     }
@@ -285,14 +287,15 @@ class LucideGenerator(
 
 fun main(args: Array<String>) {
     if (args.isEmpty()) {
-        println("Usage: kotlinc -script generator/generate_lucide.main.kts <source_dir> [output_dir] [template_dir]")
+        println("Usage: kotlinc -script generator/generate_lucide.main.kts <source_dir> <version> [output_dir] [template_dir]")
         return
     }
     val src = File(args[0])
-    val out = if (args.size > 1) File(args[1]) else defaultOutputDir
-    val templates = if (args.size > 2) File(args[2]) else defaultTemplateDir
+    val version = if (args.size > 1) args[1] else "unknown"
+    val out = if (args.size > 2) File(args[2]) else defaultOutputDir
+    val templates = if (args.size > 3) File(args[3]) else defaultTemplateDir
 
-    LucideGenerator(src, out, templates).generate()
+    LucideGenerator(src, out, templates, version).generate()
 }
 
 main(args)

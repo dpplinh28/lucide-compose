@@ -7,6 +7,22 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata15 = listOf(
     
+    LucideIconMetadata("Table", listOf("spreadsheet", "grid"), listOf("text", "files"), LucideIcons.All.TableDefinition),
+    
+    LucideIconMetadata("TabletSmartphone", listOf("responsive", "screens", "browser", "testing", "mobile"), listOf("devices", "design", "development", "tools"), LucideIcons.All.TabletSmartphoneDefinition),
+    
+    LucideIconMetadata("Tablet", listOf("device"), listOf("devices"), LucideIcons.All.TabletDefinition),
+    
+    LucideIconMetadata("Tablets", listOf("medicine", "medication", "drug", "prescription", "pills", "pharmacy"), listOf("medical"), LucideIcons.All.TabletsDefinition),
+    
+    LucideIconMetadata("Tag", listOf("label", "badge", "ticket", "mark"), listOf("account"), LucideIcons.All.TagDefinition),
+    
+    LucideIconMetadata("Tags", listOf("labels", "badges", "tickets", "marks", "copy", "multiple"), listOf("account"), LucideIcons.All.TagsDefinition),
+    
+    LucideIconMetadata("Tally1", listOf("count", "score", "enumerate", "days", "one", "1", "first", "bar", "prison", "cell", "sentence"), listOf("math", "gaming"), LucideIcons.All.Tally1Definition),
+    
+    LucideIconMetadata("Tally2", listOf("count", "score", "enumerate", "days", "two", "2", "second", "double", "bars", "prison", "cell", "sentence"), listOf("math", "gaming"), LucideIcons.All.Tally2Definition),
+    
     LucideIconMetadata("Tally3", listOf("count", "score", "enumerate", "days", "three", "3", "third", "triple", "bars", "prison", "cell", "sentence"), listOf("math", "gaming"), LucideIcons.All.Tally3Definition),
     
     LucideIconMetadata("Tally4", listOf("count", "score", "enumerate", "days", "4", "fourth", "quadruple", "bars", "prison", "cell", "sentence"), listOf("math", "gaming"), LucideIcons.All.Tally4Definition),
@@ -41,7 +57,7 @@ internal val lucideMetadata15 = listOf(
     
     LucideIconMetadata("TextCursorInput", listOf("select"), listOf("text", "layout"), LucideIcons.All.TextCursorInputDefinition),
     
-    LucideIconMetadata("TextCursor", listOf("select"), listOf("text", "cursors"), LucideIcons.All.TextCursorDefinition),
+    LucideIconMetadata("TextCursor", listOf("select", "caret", "type", "typing", "write", "writing", "edit", "insert", "input", "textarea"), listOf("text", "cursors"), LucideIcons.All.TextCursorDefinition),
     
     LucideIconMetadata("TextInitial", listOf("drop cap", "text", "format", "typography", "letter", "font size"), listOf("text"), LucideIcons.All.TextInitialDefinition),
     
@@ -189,22 +205,6 @@ internal val lucideMetadata15 = listOf(
     
     LucideIconMetadata("UnfoldHorizontal", listOf("arrow", "collapse", "fold", "vertical", "dashed"), listOf("arrows", "layout"), LucideIcons.All.UnfoldHorizontalDefinition),
     
-    LucideIconMetadata("UnfoldVertical", listOf("arrow", "expand", "vertical", "dashed"), listOf("arrows", "layout"), LucideIcons.All.UnfoldVerticalDefinition),
-    
-    LucideIconMetadata("Ungroup", listOf("cubes", "packages", "parts", "units", "collection", "cluster", "separate"), listOf("shapes", "files"), LucideIcons.All.UngroupDefinition),
-    
-    LucideIconMetadata("University", listOf("building", "education", "childhood", "school", "college", "academy", "institute"), listOf("buildings", "navigation"), LucideIcons.All.UniversityDefinition),
-    
-    LucideIconMetadata("Unlink2", listOf("url", "unchain"), listOf("text"), LucideIcons.All.Unlink2Definition),
-    
-    LucideIconMetadata("Unlink", listOf("url", "unchain"), listOf("text"), LucideIcons.All.UnlinkDefinition),
-    
-    LucideIconMetadata("Unplug", listOf("electricity", "energy", "electronics", "socket", "outlet", "disconnect"), listOf("devices", "development"), LucideIcons.All.UnplugDefinition),
-    
-    LucideIconMetadata("Upload", listOf("file"), listOf("arrows", "files"), LucideIcons.All.UploadDefinition),
-    
-    LucideIconMetadata("Usb", listOf("universal", "serial", "bus", "controller", "connector", "interface"), listOf("devices", "multimedia", "home"), LucideIcons.All.UsbDefinition),
-    
-    LucideIconMetadata("UserCheck", listOf("followed", "subscribed", "done", "todo", "tick", "complete", "task"), listOf("account"), LucideIcons.All.UserCheckDefinition)
+    LucideIconMetadata("UnfoldVertical", listOf("arrow", "expand", "vertical", "dashed"), listOf("arrows", "layout"), LucideIcons.All.UnfoldVerticalDefinition)
     
 )

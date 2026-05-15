@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata4 = listOf(
     
+    LucideIconMetadata("CircuitBoard", listOf("computing", "electricity", "electronics"), listOf("science", "development"), LucideIcons.All.CircuitBoardDefinition),
+    
+    LucideIconMetadata("Citrus", listOf("lemon", "orange", "grapefruit", "fruit"), listOf("food-beverage"), LucideIcons.All.CitrusDefinition),
+    
     LucideIconMetadata("Clapperboard", listOf("movie", "film", "video", "camera", "cinema", "cut", "action", "television", "tv", "show", "entertainment"), listOf("multimedia"), LucideIcons.All.ClapperboardDefinition),
     
     LucideIconMetadata("ClipboardCheck", listOf("copied", "pasted", "done", "todo", "tick", "complete", "task"), listOf("text"), LucideIcons.All.ClipboardCheckDefinition),
@@ -201,10 +205,6 @@ internal val lucideMetadata4 = listOf(
     
     LucideIconMetadata("CreativeCommons", listOf("licence", "license"), listOf("text"), LucideIcons.All.CreativeCommonsDefinition),
     
-    LucideIconMetadata("CreditCard", listOf("bank", "purchase", "payment", "cc"), listOf("account", "finance"), LucideIcons.All.CreditCardDefinition),
-    
-    LucideIconMetadata("Croissant", listOf("bakery", "cooking", "food", "pastry"), listOf("food-beverage"), LucideIcons.All.CroissantDefinition),
-    
-    LucideIconMetadata("Crop", listOf("photo", "image"), listOf("photography", "design"), LucideIcons.All.CropDefinition)
+    LucideIconMetadata("CreditCard", listOf("bank", "purchase", "payment", "cc"), listOf("account", "finance"), LucideIcons.All.CreditCardDefinition)
     
 )

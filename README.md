@@ -2,11 +2,11 @@
 
 [![Publish to Maven Central](https://github.com/dpplinh28/lucide-compose/actions/workflows/publish.yml/badge.svg)](https://github.com/dpplinh28/lucide-compose/actions/workflows/publish.yml)
 
-A Kotlin Multiplatform library providing [Lucide Icons](https://lucide.dev/) (v1.14.0) as `ImageVector`s for Jetpack Compose and Compose Multiplatform.
+A Kotlin Multiplatform library providing [Lucide Icons](https://lucide.dev/) (v1.16.0) as `ImageVector`s for Jetpack Compose and Compose Multiplatform.
 
 ## Features
 
-- **Up-to-date**: Includes icons from **Lucide v1.14.0**.
+- **Up-to-date**: Includes icons from **Lucide v1.16.0**.
 - **Multiplatform support**: Works on Android, iOS, and JVM (Desktop).
 - **Fully Customizable**: Adjust stroke width, color, and size globally or per icon.
 - **Categorized**: Icons are organized into categories for easier discovery.
@@ -21,7 +21,7 @@ Add the following to your `commonMain` dependencies in `build.gradle.kts`:
 ```kotlin
 sourceSets {
     commonMain.dependencies {
-        implementation("io.github.dpplinh28:lucide-compose:1.14.0-1")
+        implementation("io.github.dpplinh28:lucide-compose:1.16.0")
     }
 }
 ```
@@ -32,11 +32,11 @@ Add the dependency to your app's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("io.github.dpplinh28:lucide-compose:1.14.0-1")
+    implementation("io.github.dpplinh28:lucide-compose:1.16.0")
 }
 ```
 
-*(Note: The version follows the format `[lucide-version]-[library-patch]`, e.g., `1.14.0-1`)*
+*(Note: The version follows the format `[lucide-version]-[library-patch]`, e.g., `1.16.0`)*
 
 ## Usage
 
@@ -113,6 +113,31 @@ Icons are grouped into various categories including:
 - **Type-safe**: Avoid string-based resource lookups.
 - **Dynamic**: Change stroke width and size at runtime without extra XML assets.
 - **Native**: Built using `ImageVector`, ensuring smooth integration with Compose's rendering engine.
+
+## Development
+
+### Generating Icons
+
+The icons are generated from SVG files and metadata provided by the [Lucide project](https://github.com/lucide-icons/lucide).
+
+1.  **Clone the Lucide repository**:
+    ```bash
+    git clone https://github.com/lucide-icons/lucide.git ../lucide
+    ```
+2.  **Configure the source directory**:
+    Add `lucideIconsDir` to your `local.properties` pointing to the cloned repository:
+    ```properties
+    lucideIconsDir=../lucide
+    ```
+    Alternatively, you can pass it via command line:
+    ```bash
+    ./gradlew generateLucide -PlucideIconsDir=../lucide
+    ```
+3.  **Run Generation**:
+    ```bash
+    ./gradlew generateLucide
+    ```
+    The generation task is also hooked into the build process and will run automatically before Kotlin compilation.
 
 ## Publishing
 

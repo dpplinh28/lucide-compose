@@ -1,19 +1,42 @@
 name: Publish to Maven Central
 on:
-  release:
-    types: [ released, prereleased ]
+  push:
+    tags:
+      - 'v*'
+
 jobs:
   publish:
     name: Release build and publish
     runs-on: macos-latest
+    permissions:
+      contents: write # Required to create a release
     steps:
       - name: Check out code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Important for generating release notes
+
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
           java-version: 21
+
+      - name: Extract Lucide version
+        id: lucide_version
+        run: |
+          LUCIDE_VER=$(grep "^lucide =" gradle/libs.versions.toml | cut -d '"' -f 2)
+          echo "version=$LUCIDE_VER" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body: |
+            This release includes icons from **Lucide v${{ steps.lucide_version.outputs.version }}**.
+          generate_release_notes: true
+          # The tag name will be used as the release name automatically
+          # You can customize it with 'name: Release ${{ github.ref_name }}'
+
       - name: Publish to Maven Central
         run: ./gradlew publishToMavenCentral --no-configuration-cache
         env:

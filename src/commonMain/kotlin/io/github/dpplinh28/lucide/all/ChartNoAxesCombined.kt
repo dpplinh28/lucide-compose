@@ -13,12 +13,12 @@ private val _ActivityDefinition = LucideIconDefinition("ChartNoAxesCombined") { 
                 verticalLineToRelative(5f)
             }
             lucidePath(strokeWidth) {
-                moveTo(16f, 14f)
-                verticalLineToRelative(7f)
+                moveTo(16f, 14.639f)
+                verticalLineTo(21f)
             }
             lucidePath(strokeWidth) {
-                moveTo(20f, 10f)
-                verticalLineToRelative(11f)
+                moveTo(20f, 10.656f)
+                verticalLineTo(21f)
             }
             lucidePath(strokeWidth) {
                 moveToRelative(22f, 3f)
@@ -29,12 +29,12 @@ private val _ActivityDefinition = LucideIconDefinition("ChartNoAxesCombined") { 
                 lineTo(2f, 15f)
             }
             lucidePath(strokeWidth) {
-                moveTo(4f, 18f)
-                verticalLineToRelative(3f)
+                moveTo(4f, 18.463f)
+                verticalLineTo(21f)
             }
             lucidePath(strokeWidth) {
-                moveTo(8f, 14f)
-                verticalLineToRelative(7f)
+                moveTo(8f, 14.656f)
+                verticalLineTo(21f)
             }
 }
 

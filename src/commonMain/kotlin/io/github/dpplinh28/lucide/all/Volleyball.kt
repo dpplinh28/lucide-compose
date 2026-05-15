@@ -9,25 +9,25 @@ import io.github.dpplinh28.lucide.lucidePath
 
 private val _ActivityDefinition = LucideIconDefinition("Volleyball") { strokeWidth ->
     lucidePath(strokeWidth) {
-                moveTo(11.1f, 7.1f)
-                arcToRelative(16.55f, 16.55f, 0f, false, true, 10.9f, 4f)
+                moveTo(11f, 7f)
+                arcToRelative(16f, 16f, 20f, false, true, 10.98f, 4.362f)
             }
             lucidePath(strokeWidth) {
                 moveTo(12f, 12f)
-                arcToRelative(12.6f, 12.6f, 0f, false, true, -8.7f, 5f)
+                arcToRelative(13f, 13f, 0f, false, true, -8.66f, 5f)
             }
             lucidePath(strokeWidth) {
-                moveTo(16.8f, 13.6f)
-                arcToRelative(16.55f, 16.55f, 0f, false, true, -9f, 7.5f)
+                moveTo(16.83f, 13.634f)
+                arcToRelative(16f, 16f, 0f, false, true, -9.267f, 7.328f)
             }
             lucidePath(strokeWidth) {
-                moveTo(20.7f, 17f)
-                arcToRelative(12.8f, 12.8f, 0f, false, false, -8.7f, -5f)
-                arcToRelative(13.3f, 13.3f, 0f, false, true, 0f, -10f)
+                moveTo(20.66f, 17f)
+                arcTo(13f, 13f, 0f, false, false, 12f, 12f)
+                arcToRelative(13f, 13f, 0f, false, true, 0f, -10f)
             }
             lucidePath(strokeWidth) {
-                moveTo(6.3f, 3.8f)
-                arcToRelative(16.55f, 16.55f, 0f, false, false, 1.9f, 11.5f)
+                moveTo(8.17f, 15.366f)
+                arcToRelative(16f, 16f, 0f, false, true, -1.713f, -11.69f)
             }
             lucidePath(strokeWidth) {
                 moveTo(2.0f, 12.0f)

@@ -13,12 +13,12 @@ private val _ActivityDefinition = LucideIconDefinition("Landmark") { strokeWidth
                 verticalLineToRelative(-7f)
             }
             lucidePath(strokeWidth) {
-                moveTo(11.12f, 2.198f)
-                arcToRelative(2f, 2f, 0f, false, true, 1.76f, .006f)
-                lineToRelative(7.866f, 3.847f)
-                curveToRelative(.476f, .233f, .31f, .949f, -.22f, .949f)
-                horizontalLineTo(3.474f)
-                curveToRelative(-.53f, 0f, -.695f, -.716f, -.22f, -.949f)
+                moveTo(11.119f, 2.205f)
+                arcToRelative(2f, 2f, 0f, false, true, 1.762f, 0f)
+                lineToRelative(7.84f, 3.846f)
+                arcTo(.5f, .5f, 0f, false, true, 20.5f, 7f)
+                horizontalLineToRelative(-17f)
+                arcToRelative(.5f, .5f, 0f, false, true, -.22f, -.949f)
                 close()
             }
             lucidePath(strokeWidth) {

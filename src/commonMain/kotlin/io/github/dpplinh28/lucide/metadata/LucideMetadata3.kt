@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata3 = listOf(
     
+    LucideIconMetadata("CctvOff", listOf("camera", "surveillance", "recording", "film", "videotape", "crime", "watching"), listOf("security", "devices", "communication", "connectivity", "photography"), LucideIcons.All.CctvOffDefinition),
+    
+    LucideIconMetadata("Cctv", listOf("camera", "surveillance", "recording", "film", "videotape", "crime", "watching"), listOf("security", "devices", "communication", "connectivity", "photography"), LucideIcons.All.CctvDefinition),
+    
     LucideIconMetadata("ChartArea", listOf("statistics", "analytics", "diagram", "graph", "area"), listOf("charts"), LucideIcons.All.ChartAreaDefinition),
     
     LucideIconMetadata("ChartBarBig", listOf("statistics", "analytics", "diagram", "graph"), listOf("charts"), LucideIcons.All.ChartBarBigDefinition),
@@ -201,10 +205,6 @@ internal val lucideMetadata3 = listOf(
     
     LucideIconMetadata("CircleX", listOf("cancel", "close", "delete", "remove", "times", "clear", "error", "incorrect", "wrong", "mistake", "failure", "linter", "multiply", "multiplication"), listOf("math", "development"), LucideIcons.All.CircleXDefinition),
     
-    LucideIconMetadata("Circle", listOf("off", "zero", "record", "shape"), listOf("shapes"), LucideIcons.All.CircleDefinition),
-    
-    LucideIconMetadata("CircuitBoard", listOf("computing", "electricity", "electronics"), listOf("science", "development"), LucideIcons.All.CircuitBoardDefinition),
-    
-    LucideIconMetadata("Citrus", listOf("lemon", "orange", "grapefruit", "fruit"), listOf("food-beverage"), LucideIcons.All.CitrusDefinition)
+    LucideIconMetadata("Circle", listOf("off", "zero", "record", "shape"), listOf("shapes"), LucideIcons.All.CircleDefinition)
     
 )

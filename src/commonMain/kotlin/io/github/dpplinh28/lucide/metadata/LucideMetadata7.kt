@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata7 = listOf(
     
+    LucideIconMetadata("Footprints", listOf("steps", "walking", "foot", "feet", "trail", "shoe"), listOf("navigation"), LucideIcons.All.FootprintsDefinition),
+    
+    LucideIconMetadata("Forklift", listOf("machinery", "industrial", "warehouse", "lifting", "storage", "equipment", "heavy-duty", "moving", "vehicle", "transport", "logistics"), listOf("transportation"), LucideIcons.All.ForkliftDefinition),
+    
     LucideIconMetadata("Form", listOf("document", "page", "file", "layout", "paper", "stub", "formality", "structure", "template", "inputs", "design", "components"), listOf("development"), LucideIcons.All.FormDefinition),
     
     LucideIconMetadata("Forward", listOf("send", "share", "email"), listOf("mail"), LucideIcons.All.ForwardDefinition),
@@ -201,10 +205,6 @@ internal val lucideMetadata7 = listOf(
     
     LucideIconMetadata("HeartOff", listOf("unlike", "dislike", "hate", "emotion"), listOf("social", "multimedia"), LucideIcons.All.HeartOffDefinition),
     
-    LucideIconMetadata("HeartPlus", listOf("plus", "like", "favorite", "add", "health", "support"), listOf("medical", "account", "multimedia", "gaming", "social"), LucideIcons.All.HeartPlusDefinition),
-    
-    LucideIconMetadata("HeartPulse", listOf("heartbeat", "pulse", "health", "medical", "blood pressure", "cardiac", "systole", "diastole"), listOf("medical"), LucideIcons.All.HeartPulseDefinition),
-    
-    LucideIconMetadata("HeartX", listOf("unlike", "unfavorite", "remove", "reject", "dismiss", "delete", "clear"), listOf("social", "multimedia", "design", "shapes"), LucideIcons.All.HeartXDefinition)
+    LucideIconMetadata("HeartPlus", listOf("plus", "like", "favorite", "add", "health", "support"), listOf("medical", "account", "multimedia", "gaming", "social"), LucideIcons.All.HeartPlusDefinition)
     
 )

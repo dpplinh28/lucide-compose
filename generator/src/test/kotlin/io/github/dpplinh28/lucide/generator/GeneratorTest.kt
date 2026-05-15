@@ -10,15 +10,15 @@ import kotlin.test.assertTrue
 
 class GeneratorTest {
 
-    private val testDataDir = File("generator/test-data")
-    private val templateDir = File("generator/templates")
+    private val testDataDir = File("../generator/test-data")
+    private val templateDir = File("../generator/templates")
     private lateinit var tempOutputDir: File
     private lateinit var generator: LucideGenerator
 
     @BeforeTest
     fun setup() {
         tempOutputDir = Files.createTempDirectory("lucide-gen-test").toFile()
-        generator = LucideGenerator(testDataDir, tempOutputDir, templateDir)
+        generator = LucideGenerator(testDataDir, tempOutputDir, templateDir, "1.16.0")
     }
 
     @AfterTest
@@ -78,7 +78,7 @@ class GeneratorTest {
             File(testDataDir, "svg").listFiles()?.forEach { it.copyTo(File(combinedDir, it.name)) }
             File(testDataDir, "json").listFiles()?.forEach { it.copyTo(File(combinedDir, it.name)) }
 
-            val gen = LucideGenerator(combinedDir, tempOutputDir, templateDir)
+            val gen = LucideGenerator(combinedDir, tempOutputDir, templateDir, "1.16.0")
             gen.generate()
 
             // Verify some files exist
@@ -93,14 +93,14 @@ class GeneratorTest {
             assertTrue(File(tempOutputDir, "LucideIcons.kt").exists())
             assertTrue(File(tempOutputDir, "LucideMetadata.kt").exists())
             assertTrue(
-                File(tempOutputDir, "metadata/LucideMetadataChunk0.kt").exists(),
+                File(tempOutputDir, "metadata/LucideMetadata0.kt").exists(),
                 "Should generate chunk file in metadata dir"
             )
 
             // Verify content of one file
             val trophyContent = File(tempOutputDir, "all/Trophy.kt").readText()
             assertTrue(
-                trophyContent.contains("public val Trophy: ImageVector"),
+                trophyContent.contains("public val LucideIcons.All.Trophy: ImageVector"),
                 "Should contain ImageVector declaration"
             )
             assertTrue(trophyContent.contains("lucidePath"), "Should contain lucidePath calls")
