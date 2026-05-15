@@ -1,0 +1,34 @@
+package io.github.thelacspace.lucide.all
+
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.vector.ImageVector
+import io.github.thelacspace.lucide.LucideIcons
+import io.github.thelacspace.lucide.LucideIconDefinition
+import io.github.thelacspace.lucide.asImageVector
+import io.github.thelacspace.lucide.lucidePath
+
+private val _ActivityDefinition = LucideIconDefinition("Download") { strokeWidth ->
+    lucidePath(strokeWidth) {
+                moveTo(12f, 15f)
+                verticalLineTo(3f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(21f, 15f)
+                verticalLineToRelative(4f)
+                arcToRelative(2f, 2f, 0f, false, true, -2f, 2f)
+                horizontalLineTo(5f)
+                arcToRelative(2f, 2f, 0f, false, true, -2f, -2f)
+                verticalLineToRelative(-4f)
+            }
+            lucidePath(strokeWidth) {
+                moveToRelative(7f, 10f)
+                lineToRelative(5f, 5f)
+                lineToRelative(5f, -5f)
+            }
+}
+
+public val LucideIcons.All.DownloadDefinition: LucideIconDefinition
+    get() = _ActivityDefinition
+
+public val LucideIcons.All.Download: ImageVector
+    @Composable get() = DownloadDefinition.asImageVector()

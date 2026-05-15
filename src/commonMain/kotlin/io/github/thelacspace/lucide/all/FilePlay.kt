@@ -1,0 +1,45 @@
+package io.github.thelacspace.lucide.all
+
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.vector.ImageVector
+import io.github.thelacspace.lucide.LucideIcons
+import io.github.thelacspace.lucide.LucideIconDefinition
+import io.github.thelacspace.lucide.asImageVector
+import io.github.thelacspace.lucide.lucidePath
+
+private val _ActivityDefinition = LucideIconDefinition("FilePlay") { strokeWidth ->
+    lucidePath(strokeWidth) {
+                moveTo(6f, 22f)
+                arcToRelative(2f, 2f, 0f, false, true, -2f, -2f)
+                verticalLineTo(4f)
+                arcToRelative(2f, 2f, 0f, false, true, 2f, -2f)
+                horizontalLineToRelative(8f)
+                arcToRelative(2.4f, 2.4f, 0f, false, true, 1.704f, .706f)
+                lineToRelative(3.588f, 3.588f)
+                arcTo(2.4f, 2.4f, 0f, false, true, 20f, 8f)
+                verticalLineToRelative(12f)
+                arcToRelative(2f, 2f, 0f, false, true, -2f, 2f)
+                close()
+            }
+            lucidePath(strokeWidth) {
+                moveTo(14f, 2f)
+                verticalLineToRelative(5f)
+                arcToRelative(1f, 1f, 0f, false, false, 1f, 1f)
+                horizontalLineToRelative(5f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(15.033f, 13.44f)
+                arcToRelative(.647f, .647f, 0f, false, true, 0f, 1.12f)
+                lineToRelative(-4.065f, 2.352f)
+                arcToRelative(.645f, .645f, 0f, false, true, -.968f, -.56f)
+                verticalLineToRelative(-4.704f)
+                arcToRelative(.645f, .645f, 0f, false, true, .967f, -.56f)
+                close()
+            }
+}
+
+public val LucideIcons.All.FilePlayDefinition: LucideIconDefinition
+    get() = _ActivityDefinition
+
+public val LucideIcons.All.FilePlay: ImageVector
+    @Composable get() = FilePlayDefinition.asImageVector()

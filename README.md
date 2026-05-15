@@ -1,6 +1,6 @@
 # Lucide Compose
 
-[![Publish to Maven Central](https://github.com/dpplinh28/lucide-compose/actions/workflows/publish.yml/badge.svg)](https://github.com/dpplinh28/lucide-compose/actions/workflows/publish.yml)
+[![Publish to Maven Central](https://github.com/thelacspace/lucide-compose/actions/workflows/publish.yml/badge.svg)](https://github.com/thelacspace/lucide-compose/actions/workflows/publish.yml)
 
 A Kotlin Multiplatform library providing [Lucide Icons](https://lucide.dev/) (v1.16.0) as `ImageVector`s for Jetpack Compose and Compose Multiplatform.
 
@@ -21,7 +21,7 @@ Add the following to your `commonMain` dependencies in `build.gradle.kts`:
 ```kotlin
 sourceSets {
     commonMain.dependencies {
-        implementation("io.github.dpplinh28:lucide-compose:1.16.0")
+        implementation("io.github.thelacspace:lucide-compose:1.16.0")
     }
 }
 ```
@@ -32,7 +32,7 @@ Add the dependency to your app's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("io.github.dpplinh28:lucide-compose:1.16.0")
+    implementation("io.github.thelacspace:lucide-compose:1.16.0")
 }
 ```
 
