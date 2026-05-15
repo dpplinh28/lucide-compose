@@ -9,6 +9,18 @@ import io.github.dpplinh28.lucide.lucidePath
 
 private val _ActivityDefinition = LucideIconDefinition("CandyCane") { strokeWidth ->
     lucidePath(strokeWidth) {
+                moveToRelative(10.8f, 5f)
+                lineToRelative(2.111f, 4.223f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(17.75f, 7f)
+                lineTo(15f, 2.1f)
+            }
+            lucidePath(strokeWidth) {
+                moveToRelative(4.874f, 14.647f)
+                lineToRelative(2.12f, 4.24f)
+            }
+            lucidePath(strokeWidth) {
                 moveTo(5.7f, 21f)
                 arcToRelative(2f, 2f, 0f, false, true, -3.5f, -2f)
                 lineToRelative(8.6f, -14f)
@@ -18,20 +30,8 @@ private val _ActivityDefinition = LucideIconDefinition("CandyCane") { strokeWidt
                 close()
             }
             lucidePath(strokeWidth) {
-                moveTo(17.75f, 7f)
-                lineTo(15f, 2.1f)
-            }
-            lucidePath(strokeWidth) {
-                moveTo(10.9f, 4.8f)
-                lineTo(13f, 9f)
-            }
-            lucidePath(strokeWidth) {
-                moveToRelative(7.9f, 9.7f)
-                lineToRelative(2f, 4.4f)
-            }
-            lucidePath(strokeWidth) {
-                moveTo(4.9f, 14.7f)
-                lineTo(7f, 18.9f)
+                moveToRelative(7.906f, 9.712f)
+                lineToRelative(2.005f, 4.411f)
             }
 }
 

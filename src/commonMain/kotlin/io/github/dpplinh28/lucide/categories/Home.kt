@@ -31,6 +31,9 @@ object LucideIconsHome {
     val BirdhouseDefinition get() = LucideIcons.All.BirdhouseDefinition
     val Birdhouse: ImageVector @Composable get() = LucideIcons.All.Birdhouse
     
+    val BlenderDefinition get() = LucideIcons.All.BlenderDefinition
+    val Blender: ImageVector @Composable get() = LucideIcons.All.Blender
+    
     val BlindsDefinition get() = LucideIcons.All.BlindsDefinition
     val Blinds: ImageVector @Composable get() = LucideIcons.All.Blinds
     

@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata6 = listOf(
     
+    LucideIconMetadata("FileCode", listOf("script", "document", "gist", "html", "xml", "property list", "plist"), listOf("files", "development"), LucideIcons.All.FileCodeDefinition),
+    
+    LucideIconMetadata("FileCog", listOf("executable", "settings", "cog", "edit", "gear"), listOf("files"), LucideIcons.All.FileCogDefinition),
+    
     LucideIconMetadata("FileDiff", listOf("diff", "patch"), listOf("files", "development"), LucideIcons.All.FileDiffDefinition),
     
     LucideIconMetadata("FileDigit", listOf("number", "document"), listOf("files", "development"), LucideIcons.All.FileDigitDefinition),
@@ -201,10 +205,6 @@ internal val lucideMetadata6 = listOf(
     
     LucideIconMetadata("Folder", listOf("directory"), listOf("files"), LucideIcons.All.FolderDefinition),
     
-    LucideIconMetadata("Folders", listOf("multiple", "copy", "directories"), listOf("files"), LucideIcons.All.FoldersDefinition),
-    
-    LucideIconMetadata("Footprints", listOf("steps", "walking", "foot", "feet", "trail", "shoe"), listOf("navigation"), LucideIcons.All.FootprintsDefinition),
-    
-    LucideIconMetadata("Forklift", listOf("machinery", "industrial", "warehouse", "lifting", "storage", "equipment", "heavy-duty", "moving", "vehicle", "transport", "logistics"), listOf("transportation"), LucideIcons.All.ForkliftDefinition)
+    LucideIconMetadata("Folders", listOf("multiple", "copy", "directories"), listOf("files"), LucideIcons.All.FoldersDefinition)
     
 )

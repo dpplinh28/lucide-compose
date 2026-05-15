@@ -20,13 +20,11 @@ private val _ActivityDefinition = LucideIconDefinition("TextCursor") { strokeWid
                 moveTo(7f, 22f)
                 horizontalLineToRelative(1f)
                 arcToRelative(4f, 4f, 0f, false, false, 4f, -4f)
-                verticalLineToRelative(-1f)
             }
             lucidePath(strokeWidth) {
                 moveTo(7f, 2f)
                 horizontalLineToRelative(1f)
                 arcToRelative(4f, 4f, 0f, false, true, 4f, 4f)
-                verticalLineToRelative(1f)
             }
 }
 

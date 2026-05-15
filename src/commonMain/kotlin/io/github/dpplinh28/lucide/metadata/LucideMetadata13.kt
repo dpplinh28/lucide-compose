@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata13 = listOf(
     
+    LucideIconMetadata("ServerOff", listOf("cloud", "storage"), listOf("development", "devices"), LucideIcons.All.ServerOffDefinition),
+    
+    LucideIconMetadata("Server", listOf("cloud", "storage"), listOf("development", "devices"), LucideIcons.All.ServerDefinition),
+    
     LucideIconMetadata("Settings2", listOf("cog", "edit", "gear", "preferences", "slider"), listOf("account"), LucideIcons.All.Settings2Definition),
     
     LucideIconMetadata("Settings", listOf("cog", "edit", "gear", "preferences"), listOf("account"), LucideIcons.All.SettingsDefinition),
@@ -201,10 +205,6 @@ internal val lucideMetadata13 = listOf(
     
     LucideIconMetadata("SquareCenterlineDashedHorizontal", listOf("reflect", "mirror", "alignment", "dashed"), listOf("design", "photography"), LucideIcons.All.SquareCenterlineDashedHorizontalDefinition),
     
-    LucideIconMetadata("SquareCenterlineDashedVertical", listOf("reflect", "mirror", "alignment", "dashed"), listOf("design", "photography"), LucideIcons.All.SquareCenterlineDashedVerticalDefinition),
-    
-    LucideIconMetadata("SquareChartGantt", listOf("projects", "manage", "overview", "roadmap", "plan", "intentions", "timeline", "deadline", "date", "event", "range", "period", "productivity", "work", "agile", "code", "coding", "toolbar", "button"), listOf("charts", "time", "development", "design"), LucideIcons.All.SquareChartGanttDefinition),
-    
-    LucideIconMetadata("SquareCheckBig", listOf("done", "todo", "tick", "complete", "task"), listOf("notifications"), LucideIcons.All.SquareCheckBigDefinition)
+    LucideIconMetadata("SquareCenterlineDashedVertical", listOf("reflect", "mirror", "alignment", "dashed"), listOf("design", "photography"), LucideIcons.All.SquareCenterlineDashedVerticalDefinition)
     
 )

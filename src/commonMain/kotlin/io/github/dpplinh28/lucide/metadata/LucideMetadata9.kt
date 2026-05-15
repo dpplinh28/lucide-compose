@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata9 = listOf(
     
+    LucideIconMetadata("ListIndentDecrease", listOf("text", "tab"), listOf("text", "development"), LucideIcons.All.ListIndentDecreaseDefinition),
+    
+    LucideIconMetadata("ListIndentIncrease", listOf("text", "tab"), listOf("text", "development"), LucideIcons.All.ListIndentIncreaseDefinition),
+    
     LucideIconMetadata("ListMinus", listOf("playlist", "remove", "song", "subtract", "delete", "unqueue"), listOf("multimedia", "text"), LucideIcons.All.ListMinusDefinition),
     
     LucideIconMetadata("ListMusic", listOf("playlist", "queue", "music", "audio", "playback"), listOf("multimedia"), LucideIcons.All.ListMusicDefinition),
@@ -201,10 +205,6 @@ internal val lucideMetadata9 = listOf(
     
     LucideIconMetadata("MessagesSquare", listOf("comment", "chat", "conversation", "dialog", "feedback", "speech bubbles", "copy", "multiple", "discussion", "interview", "debate"), listOf("social"), LucideIcons.All.MessagesSquareDefinition),
     
-    LucideIconMetadata("Metronome", listOf("metronome", "tempo", "rhythm", "beat", "bpm", "music", "audio", "sound", "practice", "timing", "timer", "time", "pulse", "sync", "cadence", "control", "playback", "studio", "tool"), listOf("multimedia", "time"), LucideIcons.All.MetronomeDefinition),
-    
-    LucideIconMetadata("MicOff", listOf("record", "sound", "mute", "microphone"), listOf("devices", "communication", "connectivity", "multimedia"), LucideIcons.All.MicOffDefinition),
-    
-    LucideIconMetadata("MicVocal", listOf("lyrics", "voice", "listen", "sound", "music", "radio", "podcast", "karaoke", "singing", "microphone"), listOf("devices", "multimedia"), LucideIcons.All.MicVocalDefinition)
+    LucideIconMetadata("Metronome", listOf("metronome", "tempo", "rhythm", "beat", "bpm", "music", "audio", "sound", "practice", "timing", "timer", "time", "pulse", "sync", "cadence", "control", "playback", "studio", "tool"), listOf("multimedia", "time"), LucideIcons.All.MetronomeDefinition)
     
 )

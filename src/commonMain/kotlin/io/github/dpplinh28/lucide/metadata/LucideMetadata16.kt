@@ -7,6 +7,22 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata16 = listOf(
     
+    LucideIconMetadata("Ungroup", listOf("cubes", "packages", "parts", "units", "collection", "cluster", "separate"), listOf("shapes", "files"), LucideIcons.All.UngroupDefinition),
+    
+    LucideIconMetadata("University", listOf("building", "education", "childhood", "school", "college", "academy", "institute"), listOf("buildings", "navigation"), LucideIcons.All.UniversityDefinition),
+    
+    LucideIconMetadata("Unlink2", listOf("url", "unchain"), listOf("text"), LucideIcons.All.Unlink2Definition),
+    
+    LucideIconMetadata("Unlink", listOf("url", "unchain"), listOf("text"), LucideIcons.All.UnlinkDefinition),
+    
+    LucideIconMetadata("Unplug", listOf("electricity", "energy", "electronics", "socket", "outlet", "disconnect"), listOf("devices", "development"), LucideIcons.All.UnplugDefinition),
+    
+    LucideIconMetadata("Upload", listOf("file"), listOf("arrows", "files"), LucideIcons.All.UploadDefinition),
+    
+    LucideIconMetadata("Usb", listOf("universal", "serial", "bus", "controller", "connector", "interface"), listOf("devices", "multimedia", "home"), LucideIcons.All.UsbDefinition),
+    
+    LucideIconMetadata("UserCheck", listOf("followed", "subscribed", "done", "todo", "tick", "complete", "task"), listOf("account"), LucideIcons.All.UserCheckDefinition),
+    
     LucideIconMetadata("UserCog", listOf("settings", "edit", "cog", "gear"), listOf("account"), LucideIcons.All.UserCogDefinition),
     
     LucideIconMetadata("UserKey", listOf("passkey", "password", "login", "authentication", "authorization", "roles", "permissions", "private", "public", "security", "person", "account", "contact"), listOf("account"), LucideIcons.All.UserKeyDefinition),
@@ -189,22 +205,6 @@ internal val lucideMetadata16 = listOf(
     
     LucideIconMetadata("ZodiacCancer", listOf("crab", "shell", "protection", "water", "intuition", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacCancerDefinition),
     
-    LucideIconMetadata("ZodiacCapricorn", listOf("goat", "mountain", "ambition", "earth", "discipline", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacCapricornDefinition),
-    
-    LucideIconMetadata("ZodiacGemini", listOf("twins", "duality", "communication", "air", "adaptability", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacGeminiDefinition),
-    
-    LucideIconMetadata("ZodiacLeo", listOf("lion", "crown", "leadership", "fire", "confidence", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacLeoDefinition),
-    
-    LucideIconMetadata("ZodiacLibra", listOf("scales", "balance", "justice", "air", "harmony", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacLibraDefinition),
-    
-    LucideIconMetadata("ZodiacOphiuchus", listOf("serpent", "snake holder", "healing", "knowledge", "astronomy", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacOphiuchusDefinition),
-    
-    LucideIconMetadata("ZodiacPisces", listOf("fish", "duality", "water", "dreams", "empathy", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacPiscesDefinition),
-    
-    LucideIconMetadata("ZodiacSagittarius", listOf("archer", "arrow", "exploration", "fire", "philosophy", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacSagittariusDefinition),
-    
-    LucideIconMetadata("ZodiacScorpio", listOf("scorpion", "stinger", "intensity", "water", "transformation", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacScorpioDefinition),
-    
-    LucideIconMetadata("ZodiacTaurus", listOf("bull", "strength", "stability", "earth", "endurance", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacTaurusDefinition)
+    LucideIconMetadata("ZodiacCapricorn", listOf("goat", "mountain", "ambition", "earth", "discipline", "astrology", "star sign", "horoscope", "constellation", "celestial"), listOf("social", "emoji"), LucideIcons.All.ZodiacCapricornDefinition)
     
 )

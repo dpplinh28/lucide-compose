@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata8 = listOf(
     
+    LucideIconMetadata("HeartPulse", listOf("heartbeat", "pulse", "health", "medical", "blood pressure", "cardiac", "systole", "diastole"), listOf("medical"), LucideIcons.All.HeartPulseDefinition),
+    
+    LucideIconMetadata("HeartX", listOf("unlike", "unfavorite", "remove", "reject", "dismiss", "delete", "clear"), listOf("social", "multimedia", "design", "shapes"), LucideIcons.All.HeartXDefinition),
+    
     LucideIconMetadata("Heart", listOf("like", "love", "emotion", "suit", "playing", "cards"), listOf("medical", "social", "multimedia", "emoji", "gaming", "shapes"), LucideIcons.All.HeartDefinition),
     
     LucideIconMetadata("Heater", listOf("heating", "warmth", "comfort", "fire", "stove", "electric", "electronics", "amenities"), listOf("home", "devices", "travel"), LucideIcons.All.HeaterDefinition),
@@ -117,7 +121,7 @@ internal val lucideMetadata8 = listOf(
     
     LucideIconMetadata("LandPlot", listOf("area", "surface", "square metres", "allotment", "parcel", "property", "plane", "acres", "measure", "distance", "isometric", "flag", "golf course", "hole"), listOf("design", "tools", "math", "sports", "gaming"), LucideIcons.All.LandPlotDefinition),
     
-    LucideIconMetadata("Landmark", listOf("bank", "building", "capitol", "finance", "money", "museum", "art gallery", "hall", "institute", "pediment", "portico", "columns", "pillars", "classical", "architecture", "government", "institution"), listOf("finance", "navigation", "buildings"), LucideIcons.All.LandmarkDefinition),
+    LucideIconMetadata("Landmark", listOf("bank", "building", "capitol", "finance", "money", "museum", "art gallery", "hall", "institute", "pediment", "portico", "doric", "columns", "pillars", "classical", "architecture", "government", "institution", "monument", "site", "history", "historic", "library", "temple", "ancient", "structure"), listOf("finance", "navigation", "buildings"), LucideIcons.All.LandmarkDefinition),
     
     LucideIconMetadata("Languages", listOf("translate"), listOf("text"), LucideIcons.All.LanguagesDefinition),
     
@@ -201,10 +205,6 @@ internal val lucideMetadata8 = listOf(
     
     LucideIconMetadata("ListFilterPlus", listOf("filter", "plus", "options", "add"), listOf("text", "layout"), LucideIcons.All.ListFilterPlusDefinition),
     
-    LucideIconMetadata("ListFilter", listOf("options"), listOf("text"), LucideIcons.All.ListFilterDefinition),
-    
-    LucideIconMetadata("ListIndentDecrease", listOf("text", "tab"), listOf("text", "development"), LucideIcons.All.ListIndentDecreaseDefinition),
-    
-    LucideIconMetadata("ListIndentIncrease", listOf("text", "tab"), listOf("text", "development"), LucideIcons.All.ListIndentIncreaseDefinition)
+    LucideIconMetadata("ListFilter", listOf("options"), listOf("text"), LucideIcons.All.ListFilterDefinition)
     
 )

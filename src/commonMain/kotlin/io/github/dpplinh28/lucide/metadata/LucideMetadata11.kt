@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata11 = listOf(
     
+    LucideIconMetadata("PanelBottomDashed", listOf("drawer", "dock", "show", "reveal", "padding", "margin", "guide", "layout", "bleed"), listOf("layout"), LucideIcons.All.PanelBottomDashedDefinition),
+    
+    LucideIconMetadata("PanelBottomOpen", listOf("drawer", "dock", "show", "reveal", "chevron", "up"), listOf("layout", "arrows"), LucideIcons.All.PanelBottomOpenDefinition),
+    
     LucideIconMetadata("PanelBottom", listOf("drawer", "dock"), listOf("layout"), LucideIcons.All.PanelBottomDefinition),
     
     LucideIconMetadata("PanelLeftClose", listOf("primary", "drawer", "hide", "chevron", "<"), listOf("layout", "arrows"), LucideIcons.All.PanelLeftCloseDefinition),
@@ -201,10 +205,6 @@ internal val lucideMetadata11 = listOf(
     
     LucideIconMetadata("Rat", listOf("mouse", "mice", "gerbil", "rodent", "pet", "pest", "plague", "disease"), listOf("animals"), LucideIcons.All.RatDefinition),
     
-    LucideIconMetadata("Ratio", listOf("screens", "sizes", "rotate", "rotation", "adjust", "aspect ratio", "proportions", "16:9", "widescreen", "4:3", "resolution", "responsive", "mobile", "desktop", "dimensions", "monitor", "orientation", "portrait", "landscape"), listOf("layout", "design", "photography"), LucideIcons.All.RatioDefinition),
-    
-    LucideIconMetadata("ReceiptCent", listOf("bill", "voucher", "slip", "check", "counterfoil", "currency", "cents", "dollar", "usd", "$", "¢"), listOf("finance", "travel"), LucideIcons.All.ReceiptCentDefinition),
-    
-    LucideIconMetadata("ReceiptEuro", listOf("bill", "voucher", "slip", "check", "counterfoil", "currency", "€"), listOf("finance", "travel"), LucideIcons.All.ReceiptEuroDefinition)
+    LucideIconMetadata("Ratio", listOf("screens", "sizes", "rotate", "rotation", "adjust", "aspect ratio", "proportions", "16:9", "widescreen", "4:3", "resolution", "responsive", "mobile", "desktop", "dimensions", "monitor", "orientation", "portrait", "landscape"), listOf("layout", "design", "photography"), LucideIcons.All.RatioDefinition)
     
 )

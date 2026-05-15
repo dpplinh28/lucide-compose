@@ -7,6 +7,10 @@ import io.github.dpplinh28.lucide.LucideIconDefinition
 
 internal val lucideMetadata12 = listOf(
     
+    LucideIconMetadata("ReceiptCent", listOf("bill", "voucher", "slip", "check", "counterfoil", "currency", "cents", "dollar", "usd", "$", "¢"), listOf("finance", "travel"), LucideIcons.All.ReceiptCentDefinition),
+    
+    LucideIconMetadata("ReceiptEuro", listOf("bill", "voucher", "slip", "check", "counterfoil", "currency", "€"), listOf("finance", "travel"), LucideIcons.All.ReceiptEuroDefinition),
+    
     LucideIconMetadata("ReceiptIndianRupee", listOf("bill", "voucher", "slip", "check", "counterfoil", "currency", "inr", "₹"), listOf("finance", "travel"), LucideIcons.All.ReceiptIndianRupeeDefinition),
     
     LucideIconMetadata("ReceiptJapaneseYen", listOf("bill", "voucher", "slip", "check", "counterfoil", "currency", "jpy", "¥"), listOf("finance", "travel"), LucideIcons.All.ReceiptJapaneseYenDefinition),
@@ -201,10 +205,6 @@ internal val lucideMetadata12 = listOf(
     
     LucideIconMetadata("ServerCog", listOf("cloud", "storage", "computing", "cog", "gear"), listOf("development", "devices"), LucideIcons.All.ServerCogDefinition),
     
-    LucideIconMetadata("ServerCrash", listOf("cloud", "storage", "problem", "error"), listOf("development", "devices"), LucideIcons.All.ServerCrashDefinition),
-    
-    LucideIconMetadata("ServerOff", listOf("cloud", "storage"), listOf("development", "devices"), LucideIcons.All.ServerOffDefinition),
-    
-    LucideIconMetadata("Server", listOf("cloud", "storage"), listOf("development", "devices"), LucideIcons.All.ServerDefinition)
+    LucideIconMetadata("ServerCrash", listOf("cloud", "storage", "problem", "error"), listOf("development", "devices"), LucideIcons.All.ServerCrashDefinition)
     
 )
