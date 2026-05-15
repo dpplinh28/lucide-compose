@@ -1,0 +1,45 @@
+package io.github.thelacspace.lucide.all
+
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.vector.ImageVector
+import io.github.thelacspace.lucide.LucideIcons
+import io.github.thelacspace.lucide.LucideIconDefinition
+import io.github.thelacspace.lucide.asImageVector
+import io.github.thelacspace.lucide.lucidePath
+
+private val _ActivityDefinition = LucideIconDefinition("ChartNoAxesCombined") { strokeWidth ->
+    lucidePath(strokeWidth) {
+                moveTo(12f, 16f)
+                verticalLineToRelative(5f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(16f, 14.639f)
+                verticalLineTo(21f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(20f, 10.656f)
+                verticalLineTo(21f)
+            }
+            lucidePath(strokeWidth) {
+                moveToRelative(22f, 3f)
+                lineToRelative(-8.646f, 8.646f)
+                arcToRelative(.5f, .5f, 0f, false, true, -.708f, 0f)
+                lineTo(9.354f, 8.354f)
+                arcToRelative(.5f, .5f, 0f, false, false, -.707f, 0f)
+                lineTo(2f, 15f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(4f, 18.463f)
+                verticalLineTo(21f)
+            }
+            lucidePath(strokeWidth) {
+                moveTo(8f, 14.656f)
+                verticalLineTo(21f)
+            }
+}
+
+public val LucideIcons.All.ChartNoAxesCombinedDefinition: LucideIconDefinition
+    get() = _ActivityDefinition
+
+public val LucideIcons.All.ChartNoAxesCombined: ImageVector
+    @Composable get() = ChartNoAxesCombinedDefinition.asImageVector()

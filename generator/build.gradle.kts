@@ -13,7 +13,7 @@ dependencies {
 tasks.register<JavaExec>("generate") {
     group = "generation"
     classpath = sourceSets["main"].runtimeClasspath
-    mainClass.set("io.github.dpplinh28.lucide.generator.MainKt")
+    mainClass.set("io.github.thelacspace.lucide.generator.MainKt")
 
     val localProperties = Properties().apply {
         val file = rootProject.file("local.properties")
@@ -34,7 +34,7 @@ tasks.register<JavaExec>("generate") {
     val lucideVersion = libs.versions.lucide.get()
 
     // Output directory is relative to the root project
-    val outputDir = rootProject.file("src/commonMain/kotlin/io/github/dpplinh28/lucide")
+    val outputDir = rootProject.file("src/commonMain/kotlin/io/github/thelacspace/lucide")
     val templateDir = project.file("templates")
 
     args(

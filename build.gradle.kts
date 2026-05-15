@@ -5,7 +5,7 @@ import org.gradle.api.provider.Property
 import org.gradle.api.tasks.*
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
-group = "io.github.dpplinh28"
+group = "io.github.thelacspace"
 val lucideVersion = libs.versions.lucide.get()
 val libraryPostfix = ""
 version = "$lucideVersion$libraryPostfix"
@@ -37,8 +37,8 @@ abstract class SyncReadmeTask : DefaultTask() {
             val lVersion = lucideVersion.get()
 
             val updatedContent = content.replace(
-                Regex("io\\.github\\.dpplinh28:lucide-compose:[\\d\\.-]+"),
-                "io.github.dpplinh28:lucide-compose:$pVersion"
+                Regex("io\\.github\\.thelacspace:lucide-compose:[\\d\\.-]+"),
+                "io.github.thelacspace:lucide-compose:$pVersion"
             ).replace(
                 Regex("Lucide v[\\d\\.-]+"),
                 "Lucide v$lVersion"
@@ -73,7 +73,7 @@ plugins {
 kotlin {
     jvm()
     androidLibrary {
-        namespace = "io.github.dpplinh28.lucide.compose"
+        namespace = "io.github.thelacspace.lucide.compose"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
 
@@ -123,7 +123,7 @@ mavenPublishing {
         name = "Lucide Compose"
         description = "Lucide Icons for Compose (Android/Multiplatform)"
         inceptionYear = "2026"
-        url = "https://github.com/dpplinh28/lucide-compose"
+        url = "https://github.com/thelacspace/lucide-compose"
         licenses {
             license {
                 name = "The Apache License, Version 2.0"
@@ -133,16 +133,16 @@ mavenPublishing {
         }
         developers {
             developer {
-                id = "dpplinh28"
-                name = "Linh Do"
+                id = "thelacspace"
+                name = "The Lac's Space"
                 email = "dpplinh28@gmail.com"
-                url = "https://github.com/dpplinh28"
+                url = "https://github.com/thelacspace"
             }
         }
         scm {
-            url = "https://github.com/dpplinh28/lucide-compose"
-            connection = "scm:git:git://github.com/dpplinh28/lucide-compose.git"
-            developerConnection = "scm:git:ssh://github.com/dpplinh28/lucide-compose.git"
+            url = "https://github.com/thelacspace/lucide-compose"
+            connection = "scm:git:git://github.com/thelacspace/lucide-compose.git"
+            developerConnection = "scm:git:ssh://github.com/thelacspace/lucide-compose.git"
         }
     }
 }

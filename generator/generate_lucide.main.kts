@@ -11,7 +11,7 @@ import com.github.jknack.handlebars.Handlebars
 import com.github.jknack.handlebars.io.FileTemplateLoader
 
 // --- Configuration ---
-val defaultOutputDir = File("src/commonMain/kotlin/io/github/dpplinh28/lucide")
+val defaultOutputDir = File("src/commonMain/kotlin/io/github/thelacspace/lucide")
 val defaultTemplateDir = File("generator/templates")
 
 // We'll manually include the logic here since importing from src/jvmMain in a script is tricky 

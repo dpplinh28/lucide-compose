@@ -1,0 +1,25 @@
+package io.github.thelacspace.lucide.all
+
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.vector.ImageVector
+import io.github.thelacspace.lucide.LucideIcons
+import io.github.thelacspace.lucide.LucideIconDefinition
+import io.github.thelacspace.lucide.asImageVector
+import io.github.thelacspace.lucide.lucidePath
+
+private val _ActivityDefinition = LucideIconDefinition("Space") { strokeWidth ->
+    lucidePath(strokeWidth) {
+                moveTo(22f, 17f)
+                verticalLineToRelative(1f)
+                curveToRelative(0f, .5f, -.5f, 1f, -1f, 1f)
+                horizontalLineTo(3f)
+                curveToRelative(-.5f, 0f, -1f, -.5f, -1f, -1f)
+                verticalLineToRelative(-1f)
+            }
+}
+
+public val LucideIcons.All.SpaceDefinition: LucideIconDefinition
+    get() = _ActivityDefinition
+
+public val LucideIcons.All.Space: ImageVector
+    @Composable get() = SpaceDefinition.asImageVector()
